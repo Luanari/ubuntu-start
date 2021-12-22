@@ -26,7 +26,7 @@ sudo gpasswd -a $USER docker
 
 # качаем docker-compose 
 
-echo *** скачиваем docker-compose v2.2.2
+echo *** Скачиваем docker-compose v2.2.2 (использовать не обязательно, просто чтобы был)
 
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 
@@ -40,7 +40,7 @@ docker-compose --version
 
 # качаем kubectl 
 
-echo *** Скачиваем kubectl
+echo *** Скачиваем kubectl (использовать не обязательно, просто чтобы был)
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
@@ -56,8 +56,20 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 kubectl version --client
 
+# качаем minikube
 
+echo *** Скачиваем minikube (использовать не обязательно, просто чтобы был)
 
+sudo curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   
 
+# делаем исполняемым
 
+sudo chmod +x minikube
 
+# помещаем в папку откуда будем запускать
+
+sudo mv ./minikube /usr/local/bin/minikube
+
+# закоменченно специально просто чтобы было для истории
+
+# *** очередная хрень
