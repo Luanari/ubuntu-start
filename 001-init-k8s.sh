@@ -23,7 +23,7 @@ sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 echo !!!                                !!!
 echo !!!                                !!!
 echo !!! Внимание: скопируй join-строку !!!
-echo !!!                                !!!
+echo !!!       в какой-нибудь файл      !!!
 echo !!!                                !!!
 
 # копируем настройки чтобы kubectl работал
