@@ -12,7 +12,7 @@ sudo systemctl restart kubelet
 
 # чтобы заработал flannel
 
-mkdir /run/flannel/
+sudo mkdir /run/flannel/
 
 sudo cp subnet.env /run/flannel/subnet.env
 
@@ -20,9 +20,11 @@ sudo cp subnet.env /run/flannel/subnet.env
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
-echo *** !!!                               !!! ***
-echo *** !!! Внимание скопируй join-строку !!! ***
-echo *** !!!                               !!! ***
+echo !!!                                !!!
+echo !!!                                !!!
+echo !!! Внимание: скопируй join-строку !!!
+echo !!!                                !!!
+echo !!!                                !!!
 
 # копируем настройки чтобы kubectl работал
 
