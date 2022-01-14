@@ -52,4 +52,9 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 sudo apt install kubeadm kubelet kubectl kubernetes-cni
 
-# пока все
+# отключаем swap
+
+sudo swapoff -all
+
+# дописать удаление .swp файла и комментирование /etc/fstab
+
