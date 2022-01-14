@@ -54,7 +54,7 @@ sudo apt install kubeadm kubelet kubectl kubernetes-cni
 
 # отключаем swap
 
-sudo swapoff -all
+sudo swapoff --all
 
 # дописать удаление .swp файла и комментирование /etc/fstab
 
