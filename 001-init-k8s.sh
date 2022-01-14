@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# чтобы эта хрень заработала
-
-sudo cp daemon.json /etc/docker/daemon.json
-
-sudo systemctl daemon-reload
-
-sudo systemctl restart docker
-
-sudo systemctl restart kubelet
-
 # чтобы заработал flannel
 
 sudo mkdir /run/flannel/
