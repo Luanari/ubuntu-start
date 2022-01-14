@@ -60,3 +60,14 @@ sudo swapoff --all
 
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 
+# сюда добавить удаление swapfile точно посмотреть название файла
+
+# чтобы эта хрень заработала иначе будет не пойми что твориться
+
+sudo cp daemon.json /etc/docker/daemon.json
+
+sudo systemctl daemon-reload
+
+sudo systemctl restart docker
+
+sudo systemctl restart kubelet
