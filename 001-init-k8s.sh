@@ -10,11 +10,9 @@ sudo cp subnet.env /run/flannel/subnet.env
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
-echo !!!                                !!!
-echo !!!                                !!!
-echo !!! Внимание: скопируй join-строку !!!
-echo !!!       в какой-нибудь файл      !!!
-echo !!!                                !!!
+# если забыли записать строчку с join - перегенирируйте следующией командой которая закомментирована
+
+# kubeadm token create --print-join-command
 
 # копируем настройки чтобы kubectl работал
 
