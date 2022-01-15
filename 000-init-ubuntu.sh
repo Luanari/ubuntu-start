@@ -60,7 +60,7 @@ sudo swapoff --all
 
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 
-# сюда добавить удаление swapfile точно посмотреть название файла
+# удалем сам файл swap чтобы не занимал место
 
 sudo rm -f /swap.img
 
