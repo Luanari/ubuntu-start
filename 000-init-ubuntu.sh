@@ -50,7 +50,7 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 # ставим куски кубика
 
-sudo apt install kubeadm kubelet kubectl kubernetes-cni
+sudo apt install -y kubeadm kubelet kubectl kubernetes-cni
 
 # отключаем swap
 
