@@ -1,5 +1,7 @@
 #!/bin/bash
 
-# ставим что понадобиться для работы
+# ставим mc, network-tools
 
-sudo apt install -y mc network-tools nmap
+sudo apt install -y mc network-tools
+
+# ставим еще что-нибудь
